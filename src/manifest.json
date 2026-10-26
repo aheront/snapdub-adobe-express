@@ -1,0 +1,33 @@
+{
+    "testId": "f61a90f8-8f64-439f-ba11-c58eec7abe52",
+    "name": "SnapDub Clips",
+    "version": "1.0.0",
+    "manifestVersion": 2,
+    "requirements": {
+        "apps": [
+            {
+                "name": "Express",
+                "apiVersion": 1,
+                "supportedDeviceClass": [
+                    "desktop"
+                ]
+            }
+        ]
+    },
+    "entryPoints": [
+        {
+            "type": "panel",
+            "id": "panel1",
+            "main": "index.html",
+            "permissions": {
+                "oauth": [
+                    "snapdub.ai"
+                ],
+                "sandbox": [
+                    "allow-popups",
+                    "allow-popups-to-escape-sandbox"
+                ]
+            }
+        }
+    ]
+}
